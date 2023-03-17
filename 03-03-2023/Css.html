@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* :root {
+            --ParentHeight: 50vh;
+            --width: 80%;
+        }
+
+        .wrapper {
+            width: var(--width);
+            height: var(--ParentHeight);
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Parent2 {
+            background-color: yellow;
+            width: var(--width);
+            height: var(--ParentHeight);
+        } */
+        .wrapper {
+            width: 100%;
+            height: 100vh;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: myFun 5s infinite;
+        }
+
+        @keyframes myFun {
+            0% {
+                background-image: url(./img/antoine-beauvillain-qrPqGP-SG8w-unsplash.jpg);
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                border-radius: 0%;
+            }
+
+            50% {
+                background-color: #fff;
+                background-image: url(./img/docsliders.jpg);
+                background-size: cover;
+                background-position: center;
+                width: 50%;
+                border-radius: 50%;
+                margin-left: 0%;
+
+            }
+
+            100% {
+                background-color: yellow;
+                background-image: url(./img/mains.jpg);
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                margin-left: 50%;
+            }
+        }
+    </style>
+    <div class="wrapper">
+
+    </div>
+    <!-- <div class="Parent2">
+        helo
+    </div> -->
+</body>
+
+</html>

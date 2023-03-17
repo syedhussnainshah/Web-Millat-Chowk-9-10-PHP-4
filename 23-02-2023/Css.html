@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .Main {
+            width: 100%;
+            height: 100vh;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Main>div:nth-child(1) {
+            background-color: yellow;
+            width: 60%;
+            height: 60%;
+            position: absolute;
+            /* z-index: -1; */
+            bottom: 0;
+        }
+
+        .Main>div:nth-child(2) {
+            background-color: green;
+            width: 50%;
+            height: 50%;
+            z-index: 1;
+        }
+    </style>
+    <div class="Main">
+        <div>
+            child 1
+        </div>
+        <div>
+            child 2
+        </div>
+    </div>
+    <!-- <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent {
+            width: 100%;
+            height: 100vh;
+            background-color: blue;
+        }
+        .parent::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 10%;
+            background-color: yellow;
+            transition: all 2s linear;
+        }
+        .parent:hover:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            background-color: yellow;
+        }
+        .parent::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 10%;
+            background-color: red;
+            bottom: 0;
+            left: 0;
+            transition: all 3s linear;
+        }
+        .parent:hover:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            background-color: red;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+    <div class="parent">
+        Parent
+    </div> -->
+</body>
+
+</html>

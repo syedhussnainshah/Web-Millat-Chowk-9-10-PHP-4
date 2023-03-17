@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav>ul {
+            width: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            background-color: yellow;
+
+        }
+
+        nav>ul>li {
+            padding: 10px;
+            background-color: blue;
+        }
+
+        @media screen AND (min-width: 420px) {
+            nav {
+                background-color: #000;
+                color: #fff;
+                /* padding: 10px; */
+                padding: 0px;
+            }
+
+            nav>ul {
+                width: 100%;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                list-style: none;
+
+            }
+
+            nav>ul>li {
+                padding: 10px;
+                background-color: blue;
+                width: 100%;
+                margin-top: 5px;
+            }
+        }
+    </style>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Blog</li>
+            <li>Signup</li>
+            <li>Loginw</li>
+        </ul>
+    </nav>
+</body>
+
+</html>

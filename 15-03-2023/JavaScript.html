@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="todoinput">
+    <button id="btn">Click Me</button>
+    <ul id="unorder">
+        <li>input</li>
+
+    </ul>
+    <script>
+        let btn = document.getElementById("btn");
+        let todoinput = document.getElementById("todoinput");
+        let ul = document.getElementById("unorder");
+        btn.addEventListener('click', function () {
+            let li = document.createElement('li');
+            let input = document.createElement('input');
+            input.setAttribute('type', 'text');
+            input.setAttribute('readonly', 'true'); 
+            input.setAttribute('value', todoinput.value);
+            li.append(input);
+            console.log(input);
+            ul.append(li);
+            console.log(ul);
+
+
+        });
+    </script>
+</body>
+
+</html>

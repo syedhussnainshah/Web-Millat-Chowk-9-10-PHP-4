@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            width: 100%;
+            height: 100vh;
+            background-color: blue;
+
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        ul>li {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 10px;
+            border-radius: 10px;
+
+        }
+
+        @media screen AND (max-width: 415px) {
+            ul {
+                display: flex;
+                flex-direction: column;
+            }
+            ul>li{
+                background-color: aqua;
+                margin-top: 5px;
+                width: 100%;
+            }
+        }
+
+        /* @media screen AND (min-width: 600px) AND (max-width: 800px) {
+            .wrapper {
+                background-color: yellow;
+            }
+        }
+
+        @media screen AND (min-width: 800px) {
+
+            .wrapper {
+                background-color: green;
+            }
+        }
+
+        /* @media screen AND (max-width: 800px) {
+            .wrapper {
+                background-color: green;
+            }
+        }
+        */
+
+        /* @media screen AND (max-width: 600px) {
+            .wrapper {
+                background-color: red;
+            }
+        }  */
+    </style>
+    <div class="wrapper">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Login</li>
+            <li>Signup</li>
+        </ul>
+    </div>
+</body>
+
+</html>
